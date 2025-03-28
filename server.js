@@ -128,6 +128,10 @@ app.get('/api/stats', async (req, res) => {
   }
 });
 
+app.get('/api/hello', (req, res) => {
+  res.json({ message: 'Hello from the backend!' });
+});
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
